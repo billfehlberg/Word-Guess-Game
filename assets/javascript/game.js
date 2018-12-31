@@ -12,9 +12,9 @@ var countDown = ""
 
 //display clue word as indivvidual characters underscored
 document.getElementById("guess-count").innerHTML = guessCount;
+document.getElementById("clue1").innerHTML = word;
 for (var i = 0; i < word.length; i++) {
-    goodGuess.push("_");
-    document.getElementById("clue1").innerHTML = goodGuess;
+    wordLetters = word;
 }
 document.onkeyup = function(event) {
     var userGuess = event.key;
